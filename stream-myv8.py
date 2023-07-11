@@ -2,7 +2,7 @@ import cv2
 import torch
 from ultralytics import YOLO
 
-model = YOLO('best.pt')
+model = YOLO('weights/best.pt')
 model.conf = 0.5
 
 cap = cv2.VideoCapture(0)
